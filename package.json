@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "start-otro": "node introduccion.js"
+    "start-otro": "node introduccion.js",
+    "start-arreglos": "node arreglos.js"
   },
   "keywords": [
     "programacion",
