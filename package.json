@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start-js": "node index.js",
     "start-otro": "node introduccion.js",
-    "start-arreglos": "node arreglos.js"
+    "start-arreglos": "node arreglos.js",
+    "start": "npm run build && npm run start-dist",
+    "start-dist": "node ./dist/index.js",
+    "build": "tsc"
   },
   "keywords": [
     "programacion",
@@ -17,5 +20,10 @@
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.6",
+    "typescript": "^5.9.3",
+    "@types/node": "^25.2.3"
   }
 }
